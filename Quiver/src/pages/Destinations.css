@@ -1,0 +1,143 @@
+.destinations-page {
+  padding-bottom: 60px;
+}
+
+.destinations-hero {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 60px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.destinations-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.destinations-hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.search-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.category-select {
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--white);
+  font-size: 1rem;
+  min-width: 180px;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.destination-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.destination-image {
+  height: 200px;
+}
+
+.destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-content {
+  padding: 20px;
+}
+
+.destination-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.destination-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.destination-description {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.no-results h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .category-select {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}

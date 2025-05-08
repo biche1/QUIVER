@@ -1,0 +1,207 @@
+.tour-guides-page {
+  padding-bottom: 60px;
+}
+
+.tour-guides-hero {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 60px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.tour-guides-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.tour-guides-hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.search-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.specialty-select {
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--white);
+  font-size: 1rem;
+  min-width: 180px;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.guide-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.guide-image {
+  height: 200px;
+  position: relative;
+}
+
+.guide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guide-rating {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.guide-content {
+  padding: 20px;
+}
+
+.guide-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.guide-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.guide-bio {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.guide-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.guide-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.detail-value {
+  font-weight: 500;
+}
+
+.guide-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.guide-specialty {
+  background-color: var(--secondary-color);
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.guide-languages {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.languages-label {
+  color: var(--text-light);
+  margin-right: 5px;
+}
+
+.guide-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.no-results h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .specialty-select {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .guides-grid {
+    grid-template-columns: 1fr;
+  }
+}

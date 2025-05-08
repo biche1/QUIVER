@@ -1,0 +1,401 @@
+.escorts-page {
+  padding-bottom: 60px;
+}
+
+.escorts-hero {
+  background-color: #008080;
+  color: var(--white);
+  padding: 60px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.escorts-hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-large {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.find-guide-section {
+  margin-bottom: 60px;
+}
+
+.find-guide-section h1 {
+  color: #004040;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.guide-search-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+}
+
+.filter-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.filter-sidebar h3 {
+  color: #004040;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.filter-sidebar p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.filters-section {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.filter-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.filter-category {
+  margin-bottom: 20px;
+}
+
+.filter-category h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+  background-color: #008080;
+  color: white;
+  border-color: #008080;
+}
+
+.range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-inputs input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.range-inputs span {
+  color: #666;
+}
+
+.rating-filter select,
+.language-filter select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.update-btn:hover {
+  background-color: #006666;
+}
+
+.guides-results {
+  width: 100%;
+}
+
+.guides-header {
+  background-color: #f0f7f7;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.guides-header h2 {
+  color: #004040;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guide-card {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.guide-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.guide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guide-info {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guide-header h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.guide-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.guide-badges {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.language-badge {
+  background-color: #f0f7f7;
+  color: #008080;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.guide-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.guide-rating svg {
+  color: #ffc107;
+}
+
+.rating-value {
+  font-weight: 600;
+}
+
+.reviews-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.guide-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favorite-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favorite-btn.active {
+  background-color: #ffebee;
+  color: #e91e63;
+  border-color: #e91e63;
+}
+
+.guide-badge-top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #008080;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.pagination span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.page-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page-btn.active {
+  background-color: #008080;
+  color: white;
+  border-color: #008080;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.all-escorts-section {
+  padding: 20px 0;
+}
+
+.all-escorts-section h1 {
+  color: #004040;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.all-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.all-guides-grid .guide-card {
+  flex-direction: column;
+  height: 100%;
+}
+
+.all-guides-grid .guide-image {
+  width: 100%;
+  height: 200px;
+}
+
+.back-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .guide-search-container {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    order: 2;
+  }
+
+  .guides-results {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-card {
+    flex-direction: column;
+  }
+
+  .guide-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .all-guides-grid {
+    grid-template-columns: 1fr;
+  }
+}
