@@ -28,14 +28,14 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/escorts">Excorts</Link>
+            <Link to="/escorts">Escorts</Link>
           </li>
         
           <li>
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Become an escort</Link>
           </li>
         </ul>
 

@@ -290,6 +290,15 @@ const Escorts = () => {
     console.log("Filters updated")
   }
 
+  // const handleClearFilters = () => {
+  //   //Clears the filters 
+  //   const [filters, setFilters] = useState ({
+  //     category: '',
+  //     priceRange: [0, 100],
+  //     sortBy: 'newest'
+  //   })
+  // }
+
   const handleToggleFavorite = (guideId) => {
     let newFavorites
     if (favorites.includes(guideId)) {
@@ -432,10 +441,17 @@ const Escorts = () => {
                         </select>
                       </div>
                     </div>
-
+                <div className="filter-buttons">
                     <button className="update-btn" onClick={handleUpdateFilters}>
                       Update
                     </button>
+                    <button className="clear-btn">
+                      Clear
+                    </button>
+                </div>
+                    
+
+
                   </div>
                 </div>
 

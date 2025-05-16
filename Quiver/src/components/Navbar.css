@@ -38,7 +38,7 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: var(--text-color);
+  color: rgb(3,48,48);
   font-weight: 500;
   transition: color 0.3s ease;
 }

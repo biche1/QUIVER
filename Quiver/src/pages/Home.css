@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  background-color: var(--primary-color);
+  background-color: rgb(2, 24, 24);
   color: var(--white);
   padding: 80px 0;
   position: relative;
@@ -17,7 +17,7 @@
   background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3");
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
+  opacity: 0.15;
   z-index: 0;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 600px;
 }
 
 .hero-tag {
@@ -44,6 +44,10 @@
   line-height: 1.2;
   margin-bottom: 20px;
 }
+.hero h1 span, h2 span {
+  color: teal;
+}
+
 
 .hero p {
   font-size: 1.1rem;
@@ -61,6 +65,10 @@
   background-color: transparent;
   color: var(--white);
   border: 1px solid var(--white);
+}
+.hero .btn-primary {
+  background-color: rgb(3,48,48);
+  border: none;
 }
 
 .hero .btn-outline:hover {
@@ -86,7 +94,7 @@
 .section-header h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: var(--primary-color);
+  color: rgb(3, 48, 48);
 }
 
 .section-header p {
@@ -283,9 +291,10 @@
   margin: 0 auto;
 }
 
-.cta-content h2 {
+.cta-section .cta-content h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
+  color: rgb(3, 48, 48);
 }
 
 .cta-content p {
@@ -300,7 +309,7 @@
 }
 
 .cta-section .btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(3,48,48);
 }
 
 @media (max-width: 768px) {

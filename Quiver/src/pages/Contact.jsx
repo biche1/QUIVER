@@ -52,7 +52,7 @@ const Contact = () => {
     <div className="contact-page">
       <div className="contact-hero">
         <div className="container">
-          <h1>Contact Us</h1>
+          <h1>Become an escort</h1>
         </div>
       </div>
 

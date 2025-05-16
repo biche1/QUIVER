@@ -10,17 +10,18 @@ const Home = () => {
       <section className="hero">
         <div className="container hero-container">
           <div className="hero-content">
-            <div className="hero-tag">Discover the world with local experts</div>
-            <h1>Explore Amazing Destinations With Expert Local Guides</h1>
+            <div className="hero-tag">Book - Connect - Experience</div>
+            <h1>Connecting You To <span>Trusted</span> Companions...</h1>
+            <h2>Seamless, safe and on <span>Your</span> Terms</h2>
             <p>
               Connect with experienced local guides who will make your trip unforgettable. Discover hidden gems, immerse
               in local culture, and create memories that last a lifetime.
             </p>
             <div className="hero-buttons">
-              <Link to="/escorts" className="btn btn-primary">
-                Explore 
+              <Link to="/tour-guides" className="btn btn-primary">
+                Become an Escort
               </Link>
-              <Link to="/tour-guides" className="btn btn-outline">
+              <Link to="/escorts" className="btn btn-outline">
                 Find a Guide
               </Link>
             </div>
@@ -34,7 +35,7 @@ const Home = () => {
         <div className="container">
           <div className="section-header">
             <h2>Meet Our Expert Guides</h2>
-            <p>Connect with knowledgeable locals who will enhance your travel experience</p>
+            <p>The masterminds behind a seamless leisure and or business experience</p>
           </div>
 
           <div className="guides-grid">
@@ -82,7 +83,7 @@ const Home = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Start Your Adventure?</h2>
-            <p>Sign up today and connect with expert local guides around the world.</p>
+            <p>Sign up today and connect with expert escorts around the country.</p>
             <Link to="/signup" className="btn btn-primary">
               Get Started
             </Link>

@@ -149,7 +149,22 @@
   border-radius: 4px;
 }
 
-.update-btn {
+.filter-buttons {
+  
+}
+.filter-buttons .update-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.filter-buttons .clear-btn {
   width: 100%;
   padding: 10px;
   background-color: #008080;
@@ -162,6 +177,10 @@
 }
 
 .update-btn:hover {
+  background-color: #006666;
+}
+
+.clear-btn:hover {
   background-color: #006666;
 }
 

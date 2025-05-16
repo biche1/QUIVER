@@ -11,7 +11,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="container">
         <div className="dashboard-header">
-          <h1>Welcome, {user.name}!</h1>
+          <h1>You have been successfully signed in, BICHE {user.name}!</h1>
           <p>Manage your trips and connect with guides</p>
         </div>
 

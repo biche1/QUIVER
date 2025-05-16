@@ -33,7 +33,10 @@ const Signup = () => {
     setIsLoading(true)
 
     try {
-      await signup(name, email, password)
+      const profile = {
+        fullName: name
+      }
+      await signup(profile, email, password, confirmPassword)
       navigate("/dashboard")
     } catch (err) {
       setError(err.message)
