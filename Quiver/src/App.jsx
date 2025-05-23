@@ -10,7 +10,10 @@ import TourGuides from "./pages/TourGuides"
 import About from "./pages/About"
 import Escorts from "./pages/Escorts"
 import Contact from "./pages/Contact"
+import Chatbot from "./components/Chatbot"
+import UserProfile from "./pages/userprofile"
 import { AuthProvider } from "./context/AuthContext"
+import { UserProvider } from "./context/usercontext"
 import ProtectedRoute from "./components/ProtectedRoute"
 import "./App.css"
 
@@ -18,9 +21,11 @@ function App() {
   console.log("App component rendering")
   return (
     <AuthProvider>
+      <UserProvider>
       <Router>
         <div className="app">
           <Navbar />
+          <Chatbot />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -29,7 +34,7 @@ function App() {
               path="/dashboard"
               element={
                 <ProtectedRoute>
-                  <Dashboard />
+                  <UserProfile />
                 </ProtectedRoute>
               }
             />
@@ -42,6 +47,7 @@ function App() {
           <Footer />
         </div>
       </Router>
+      </UserProvider>
     </AuthProvider>
   )
 }

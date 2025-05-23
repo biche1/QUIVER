@@ -1,0 +1,288 @@
+/* Main container */
+.profile-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 1rem;
+}
+
+.profile-card {
+  max-width: 72rem;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.profile-header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 1.5rem;
+}
+
+.profile-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Loading and error states */
+.loading, .error {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.error-message {
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+/* Content layout */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-sidebar {
+  width: 100%;
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* Profile photo */
+.profile-photo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.profile-photo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edit-photo-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-photo-btn:hover {
+  background-color: #4338ca;
+}
+
+.edit-photo-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.file-input {
+  display: none;
+}
+
+/* User info */
+.user-name {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.user-phone {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Navigation */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.nav-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  color: #374151;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.nav-divider {
+  border-top: 1px solid #d1d5db;
+  margin: 0.5rem 0;
+}
+
+.delete-account-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  color: #dc2626;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.delete-account-btn:hover {
+  background-color: #fee2e2;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Fields */
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.field p {
+  color: #111827;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Forms */
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.view-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Buttons */
+.action-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.primary-btn {
+  padding: 0.5rem 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: #4338ca;
+}
+
+.secondary-btn {
+  padding: 0.5rem 1rem;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: #d1d5db;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .profile-container {
+    padding: 2rem;
+  }
+  
+  .profile-content {
+    flex-direction: row;
+  }
+  
+  .profile-sidebar {
+    width: 16rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

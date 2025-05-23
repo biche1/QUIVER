@@ -2,9 +2,12 @@
 
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
+
 import "./Dashboard.css"
 
+
 const Dashboard = () => {
+
   const { user } = useContext(AuthContext)
 
   return (

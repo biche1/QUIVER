@@ -149,6 +149,69 @@ export const AuthProvider = ({ children }) => {
     // Optional: You might want to call your backend logout endpoint here if you have one
     // await axios.post(`${API_URL}/auth/logout`)
   }
+  
+  const changePassword = async (oldPassword, newPassword, passwordConfirm) => {
+  setLoading(true);
+  setError(null);
+
+  try {
+    const response = await api.patch('/auth/change-password', {
+      oldPassword,
+      password: newPassword,
+      passwordConfirm
+    });
+
+    setLoading(false);
+    return response.data;
+  } catch (err) {
+    const message = err.response?.data?.message || 'Failed to change password';
+    setError(message);
+    setLoading(false);
+    throw new Error(message);
+  }
+};
+
+const forgotPassword = async (email) => {
+  setLoading(true);
+  setError(null);
+
+  try {
+    const response = await api.post('/auth/forgot-password', { email });
+    setLoading(false);
+    return response.data;
+  } catch (err) {
+    const message = err.response?.data?.message || 'Failed to send reset email';
+    setError(message);
+    setLoading(false);
+    throw new Error(message);
+  }
+};
+
+const resetPassword = async (resetToken, password, passwordConfirm) => {
+  setLoading(true);
+  setError(null);
+
+  try {
+    const response = await api.patch(`/auth/reset-password/${resetToken}`, {
+      password,
+      passwordConfirm
+    });
+
+    // i will log the user in automatically after reset
+    const userData = formmatUser(response);
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+    api.defaults.headers.common['Authorization'] = `Bearer ${userData.token}`;
+
+    setLoading(false);
+    return userData;
+  } catch (err) {
+    const message = err.response?.data?.message || 'Failed to reset password';
+    setError(message);
+    setLoading(false);
+    throw new Error(message);
+  }
+};
 
   return (
     <AuthContext.Provider
@@ -159,6 +222,9 @@ export const AuthProvider = ({ children }) => {
         login,
         signup,
         logout,
+        changePassword,
+        forgotPassword,
+        resetPassword,
       }}
     >
       {children}
