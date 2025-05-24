@@ -4,7 +4,7 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
-import Dashboard from "./pages/Dashboard"
+import Profile from "./pages/Profile"
 import Destinations from "./pages/Destinations"
 import TourGuides from "./pages/TourGuides"
 import About from "./pages/About"
@@ -31,7 +31,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route
-              path="/dashboard"
+              path="/Profile"
               element={
                 <ProtectedRoute>
                   <UserProfile />

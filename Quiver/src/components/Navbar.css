@@ -49,7 +49,9 @@
 
 .navbar-auth {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  padding-right: none;
+  
 }
 
 @media (max-width: 768px) {
@@ -71,4 +73,29 @@
   .navbar-auth {
     margin-top: 10px;
   }
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: rgb(3,48,48);
+  
+}
+
+
+.profile-icon {  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  color: rgb(3,48,48);
+}
+
+.navbar-auth .profile-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
 }

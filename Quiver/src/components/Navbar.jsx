@@ -4,7 +4,9 @@ import { useContext } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { AuthContext } from "../context/AuthContext"
 import logo from "../assets/logo.svg"
+import userprofileicon from "../assets/userprofileicon.svg"
 import "./Navbar.css"
+
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext)
@@ -42,8 +44,13 @@ const Navbar = () => {
         <div className="navbar-auth">
           {user ? (
             <>
-              <Link to="/dashboard" className="btn btn-outline">
-                Dashboard
+             
+              <Link to="/Profile" className="profile-link">
+                <img 
+                  src={userprofileicon || "/placeholder.svg"}
+                  alt="User Profile"
+                  className="profile-icon"
+                />
               </Link>
               <button onClick={handleLogout} className="btn btn-primary">
                 Logout
@@ -60,6 +67,7 @@ const Navbar = () => {
             </>
           )}
         </div>
+        
       </div>
     </nav>
   )

@@ -3,23 +3,23 @@
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
 
-import "./Dashboard.css"
+import "./Profile.css"
 
 
-const Dashboard = () => {
+const Profile = () => {
 
   const { user } = useContext(AuthContext)
 
   return (
-    <div className="dashboard">
+    <div className="prfile">
       <div className="container">
-        <div className="dashboard-header">
+        <div className="profile-header">
           <h1>You have been successfully signed in, BICHE {user.name}!</h1>
           <p>Manage your trips and connect with guides</p>
         </div>
 
-        <div className="dashboard-content">
-          <div className="dashboard-card">
+        <div className="profile-content">
+          <div className="profile-card">
             <h2>Your Profile</h2>
             <div className="profile-info">
               <div className="profile-field">
@@ -38,7 +38,7 @@ const Dashboard = () => {
             <button className="btn btn-outline">Edit Profile</button>
           </div>
 
-          <div className="dashboard-card">
+          <div className="profile-card">
             <h2>Upcoming Trips</h2>
             <div className="empty-state">
               <p>You don't have any upcoming trips yet.</p>
@@ -46,7 +46,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="dashboard-card">
+          <div className="profile-card">
             <h2>Saved Destinations</h2>
             <div className="empty-state">
               <p>You haven't saved any destinations yet.</p>
@@ -61,4 +61,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Profile

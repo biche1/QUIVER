@@ -22,7 +22,7 @@ const Login = () => {
 
     try {
       await login(email, password)
-      navigate("/dashboard")
+      navigate("/Home")
     } catch (err) {
       setError(err.message)
       setIsLoading(false)

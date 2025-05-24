@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/usercontext';
 import axios from 'axios';
 import './UserProfile.css';
+import userprofileicon from '../assets/userprofileicon.svg'; // Assuming you have a default profile image
 
 const UserProfile = () => {
   const { user, loading, error, fetchUserProfile, setUser } = useContext(UserContext);
@@ -114,37 +115,21 @@ const UserProfile = () => {
     <div className="profile-container">
       <div className="profile-card">
         <div className="profile-header">
-          <h1>User Profile</h1>
+          <h1><span>User Profile</span></h1>
         </div>
         <div className="profile-header">
-          <h1>{user.fullName}</h1>
-          <img src={user.imageUrl} alt="Profile" className="profile-photo" />
-          <p>{user.bio || "Test User"}</p>
+          <h1 className="span2">{user.fullName}</h1>
         </div>
 
         <div className="profile-content">
           <div className="profile-sidebar">
             <div className="profile-photo-container">
               <img 
-                src={user.profilePhoto || "https://via.placeholder.com/150"} 
-                alt="Profile" 
+                src={userprofileicon || "https://via.placeholder.com/150"} 
+ 
                 className="profile-photo"
               />
-              <button 
-                onClick={handleEditPhoto}
-                className="edit-photo-btn"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                </svg>
-              </button>
-              <input 
-                type="file" 
-                ref={fileInputRef}
-                onChange={handleFileUpload}
-                accept="image/*"
-                className="file-input"
-              />
+            
             </div>
             {/* User profile page */}
             <div className='profile-main'>
